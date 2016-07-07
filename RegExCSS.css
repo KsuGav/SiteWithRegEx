@@ -12,6 +12,12 @@ button{
     width: 100px;
     margin-left:40%;
 }
+p,a,label{
+    font-family: 'Cormorant Upright', serif;
+}
+.txtr{
+    font-family: 'Cormorant Upright', serif;
+}
 .labImg{
     display: none;
     margin-bottom: 25px;
@@ -30,7 +36,6 @@ button{
     border-radius:10px;
 }
 #scr {
-    /*margin:5px;*/
     width: 700px;
     height: 420px;
     background: darkgrey;
@@ -38,7 +43,6 @@ button{
     border: 1px solid black;
     border-radius:10px;
     box-shadow: 0 0 7px 1px plum;
-    /*transition: opacity 1000ms linear;*/
 }
 
 #radios{
@@ -64,5 +68,14 @@ button{
     border: 1px solid black;
     border-radius:10px;
     padding: 10px;
+    box-shadow: 0 0 7px 1px plum;
+}
+#logo{
+    width: 345px;
+    height: 230px;
+}
+#forLogo{
+    border: 1px solid black;
+    border-radius:59px;
     box-shadow: 0 0 7px 1px plum;
 }

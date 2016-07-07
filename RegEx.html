@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="RegExCSS.css">
+    <link href="bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <title>Title</title>
+</head>
+<body class="maincontainer">
+<div class="navbar  navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Welcome!</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" role="form">
+                <div class="form-group">
+                    <img src="logo3.png" id="logo3">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div style="background:transparent !important" class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1><img src="log.png" id="log">About</h1>
+            </div>
+            <div class="col-md-8">
+               <h1> </h1>
+                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row">
+    <div id="main">
+        <div id="scr"></div>
+        <form id="radios" name="radios">
+            <input type="radio" id="1.jpg" name="forImg" class="radBut"/>
+            <label class="labImg"><img src="1.jpg" width="100"/></label>
+            <input type="radio" id="2.jpg" name="forImg" class="radBut"/>
+            <label class="labImg"><img src="2.jpg" width="100"/></label>
+            <input type="radio" id="3.jpg" name="forImg" class="radBut"/>
+            <label class="labImg"><img src="3.jpg" width="100"/></label>
+            <input type="radio" id="4.jpg" name="forImg" class="radBut"/>
+            <label class="labImg"><img src="4.jpg" width="100"/></label>
+            <input type="radio" id="5.jpg" name="forImg" class="radBut"/>
+            <label class="labImg"><img src="5.jpg" width="100"/></label>
+        </form>
+    </div>
+</div>
+    <div class="row">
+        <h3 class="text-center">Please, complete the form!</h3>
+    </div>
+<div class="row" id="divForm">
+    <div class="row">
+    <div class="col-xs-4">
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="ChestGirth" placeholder="1.Chest Girth">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="WaistGirth" placeholder="2.Waist Girth">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="HipGirth" placeholder="3.Hip Girth">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="BreastHeight" placeholder="4.Breast Height">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="ForwardLength" placeholder="5.Forward Length">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="LengthProduct" placeholder="6.Length of the Product">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="BackLength" placeholder="7.Back Length">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="WidthSpins" placeholder="8.Width Spins">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="ShoulderWidth" placeholder="9.Shoulder Width">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="ShoulderLength" placeholder="10.Shoulder Length">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="LengthSleep" placeholder="11.Length of the Sleep">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="ArmCircumference" placeholder="12.Arm Circumference">
+        </div>
+        <div class="form-group has-success">
+            <input type="text" class="form-control" id="NeckCircumference" placeholder="13.Neck Circumference">
+        </div>
+    </div>
+    <div class="col-xs-8">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputName" maxlength="20" placeholder="Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputTelephone" class="col-sm-2 control-label">Телефон</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control" id="inputTelephone" placeholder="Телефон">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputHeight" class="col-sm-2 control-label">Рост</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputHeight" maxlength="3" placeholder="Рост">
+                </div>
+            </div>
+            <div class="form-group">
+                <h3 class="bg-info text-center">Your wishes</h3>
+                <textarea class="form-control" rows="3"></textarea>
+                <img id='imgLog' src="logo1.png">
+            </div>
+        </form>
+        </div>
+        </div>
+        <div class="row">
+        <button type="button" class="btn btn-default center-block"><span class="glyphicon glyphicon-thumbs-up"></button>
+    </div>
+</div>
+</div>
+<footer>
+    <p>&copy; Company 2016</p>
+</footer>
+<script src="RegExJS.js">
+</script>
+</body>
+</html>

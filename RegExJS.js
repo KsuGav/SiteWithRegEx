@@ -5,7 +5,7 @@
     //validation of name
 $('#inputName').on('blur',function(){
     var inputName = $('#inputName').val();
-    var regName = /^([A-Za-z]+)\s([A-Za-z]+)$/;
+    var regName = /^([A-Za-z\s]+)$/;
     var true_name = regName.test(inputName);
     if(true_name==false) {
         alert("It's not correct name!")

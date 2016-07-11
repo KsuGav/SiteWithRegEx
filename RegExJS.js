@@ -33,7 +33,22 @@ $('#inputHeight').on('blur',function(){
     if(true_height==false) {
         alert("It's not correct height! Please enter only number")
     }
-})
+});
+
+//13 fields
+//for(var i=0;i<$('.proportions').length;i++) {
+//$('.proportions').on('blur',function(){
+////console.log($('.proportions').val());
+//    var inputProp = $('.proportions').val();
+//    var regProp = /^(\d+)$/;
+//    var true_height = regProp.test(inputProp);
+//    if (true_height == false) {
+//        alert("It's not correct height! Please enter only number")
+//    }
+////})
+//})
+////}
+
 
 //slider
 var slider = {
@@ -66,9 +81,9 @@ var slider = {
 window.onload = function() { // запуск слайдера после загрузки документа
     slider.init()
 };
-// запуск слайдера
-var show = $("#butForShow");
-var pause = $("#butForPause");
+//// запуск слайдера
+//var show = $("#butForShow");
+//var pause = $("#butForPause");
 var t;
 //main
 t = setInterval(function() {
@@ -90,3 +105,7 @@ for(var j=0;j<form.length;j++){
         $("#scr").css('background', "url("+this.id+")");
     }
 };
+
+
+
+

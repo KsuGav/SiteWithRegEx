@@ -480,16 +480,6 @@ nbactions.xml
 # ignore ModelSim generated files and directories (temp files and so on)
 [_@]*
 
-# ignore compilation output of ModelSim
-*.mti
-*.dat
-*.dbs
-*.psm
-*.cmp
-*.jpg
-*.html
-*.bsf
-
 # ignore simulation output of ModelSim
 wlf*
 *.wlf

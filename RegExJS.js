@@ -8,7 +8,7 @@ $('#inputName').on('blur',function(){
     var regName = /^([A-Za-z\s]+)$/;
     var true_name = regName.test(inputName);
     if(true_name==false) {
-        alert("It's not correct name!")
+        console.log("It's not correct name!")
     }
 });
 
@@ -21,7 +21,7 @@ $('#inputEmail3').on('blur',function(){
     var regMail = /^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.(ua|com|com\.ua)$/;
     var true_mail = regMail.test(inputMail);
     if(true_mail==false) {
-        alert("It's not correct mail! Please enter again")
+        console.log("It's not correct mail! Please enter again")
     }
 });
 
@@ -31,23 +31,22 @@ $('#inputHeight').on('blur',function(){
     var regHeight = /^(\d+)$/;
     var true_height = regHeight.test(inputHeight);
     if(true_height==false) {
-        alert("It's not correct height! Please enter only number")
+        console.log("It's not correct height! Please enter only number")
     }
 });
 
 //13 fields
-$('.proportions').on('blur',function(){
-for(var i=0;i<$('.proportions').length;i++) {
+function validate13(field) {
+    var regProp = /^(\d{1,3})$/;
+    return regProp.test(field);
+};
 
-    console.log($('.proportions').length);
-    var inputProp = $('.proportions').val();
-    var regProp = /^(\d+)$/;
-    var true_height = regProp.test(inputProp);
-    if (true_height == false) {
-        alert("It's not correct height! Please enter only number")
+$('.proportions').on('blur', function (e) {
+    var field = $(e.target);
+    if (!validate13(field.val())) {
+        console.log("It's not correct height! Please enter only number")
+        $(field).addClass('has-error')
     }
-}
-////})
 })
 
 
